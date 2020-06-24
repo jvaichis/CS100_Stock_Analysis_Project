@@ -1,0 +1,43 @@
+/* ============================================================================
+   === Program: Stock Analysis ================================================
+   === Authors:	Jered Vaichis	-- jvaic001@ucr.edu
+		Kenneth Gelasio -- kgela001@ucr.edu
+		Kevin Loi	-- 
+   === Description ============================================================
+	    This program will utilize C++11 for the data manipulation. If any
+	    graphs are implemented, python 3.1 will be utilized. The program 
+	    will take in a csv of raw stock data from one of the following
+	    websites:
+		* tradingview.com
+		* marketwatch.com
+		* cnn
+	    The data will be dispersed into perspective classes. Then the
+	    perspective functions will analyze the corresponding data directed
+	    by the user.
+   === IN/OUT =================================================================
+	    IN	-- stock_data.csv
+		   user input (switch on request)
+	    OUT	-- analyzed_data.csv???
+		    # Can figure out whether or not we want to use pyhton for
+		    # charts. I have a decent python data science textbook that
+		    # we can use to implement charts. If you guys know a better
+		    # way or know how to do this, feel free to take charge.
+   ==========================================================================*/
+
+
+Ideas to go over on Friday.
+
+    # What aspects of stock analysis are we going to implement in our program?
+	-- Pulling data from what website(s)?
+	    * tradingview.com
+	    * marketwatch.com
+	    * cnn
+	    * etc...
+	-- What design patterns are we going to implement?
+	    * strategy
+	    * composite
+	    * abstract factory
+	    * decorator
+	    * visitor
+	-- Start coming up with a hierarchy and flowchart of program
+
