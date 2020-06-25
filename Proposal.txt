@@ -2,7 +2,7 @@
    === Program: Stock Analysis ================================================
    === Authors:	Jered Vaichis	-- jvaic001@ucr.edu
 		Kenneth Gelasio -- kgela001@ucr.edu
-		Kevin Loi	-- 
+		Kevin Loi	-- kloi002@ucr.edu 
    === Description ============================================================
 	    This program will utilize C++11 for the data manipulation. If any
 	    graphs are implemented, python 3.1 will be utilized. The program 
