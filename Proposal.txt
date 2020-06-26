@@ -3,17 +3,18 @@
    === Authors:	Jered Vaichis	-- jvaic001@ucr.edu
 		Kenneth Gelasio -- kgela001@ucr.edu
 		Kevin Loi	-- kloi002@ucr.edu 
+
    === Description ============================================================
 	    This program will utilize C++11 for the data manipulation. If any
 	    graphs are implemented, python 3.1 will be utilized. The program 
 	    will take in a csv of raw stock data from one of the following
 	    websites:
-		* tradingview.com
-		* marketwatch.com
-		* cnn
-	    The data will be dispersed into perspective classes. Then the
-	    perspective functions will analyze the corresponding data directed
-	    by the user.
+		* E*Trade.com
+		* finhub API
+		* Alpha Vantage API
+		* Robinhood
+	    The program will prompt user for growth of stock (dates/single day)
+	    or other. It will display graphs via Graph Vis (or the like)
    === IN/OUT =================================================================
 	    IN	-- stock_data.csv
 		   user input (switch on request)
@@ -22,22 +23,25 @@
 		    # charts. I have a decent python data science textbook that
 		    # we can use to implement charts. If you guys know a better
 		    # way or know how to do this, feel free to take charge.
+
    ==========================================================================*/
+// end of proposal
 
 
-Ideas to go over on Friday.
 
-    # What aspects of stock analysis are we going to implement in our program?
-	-- Pulling data from what website(s)?
-	    * tradingview.com
-	    * marketwatch.com
-	    * cnn
-	    * etc...
+==== STUFF TO WORK ON ================================================================
+
 	-- What design patterns are we going to implement?
 	    * strategy
 	    * composite
 	    * abstract factory
 	    * decorator
 	    * visitor
-	-- Start coming up with a hierarchy and flowchart of program
+    -- prompt user for growth (between dates/ single day)
+    -- Display (graph vis or other software)
+    -- Maybe implement API if time allows
+    -- Develop Interface
+    -- Command line
+======================================================================================
+
 
