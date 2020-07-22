@@ -67,7 +67,13 @@ double Stock::getVolume(int day){
 	return info;
 }
 
-
+void Stock::printStockInformation() {
+ cout << "=== " << this->getSym() << " ===" << endl;
+    cout << "DATE  ||  SYMBOL  ||  OPEN  ||  CLOSE  ||  HIGH  ||  LOW  ||  ADJCLOSE  ||  VOLUME  ||  " << endl;
+    cout << this->getDate() << "    " << this->getSym() << "    " << this->getOpen() << "    " << this->getClose() << "    "
+    << this->getHigh() << "    " << this->getLow() << "    " << this->getAdjacentClose() << "    " << this->getVolume() << endl; 
+cout << "=====================================================================================" << endl;
+}
 
 
 
