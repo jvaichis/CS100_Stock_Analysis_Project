@@ -62,9 +62,19 @@ double Stock::getVolume(int day){
 	return info;
 }
 
+<<<<<<< HEAD
 string Stock::getSymbol(int day){
 	return symbol.at(day);
 } 
+=======
+void Stock::printStockInformation() {
+ cout << "=== " << this->getSym() << " ===" << endl;
+    cout << "DATE  ||  SYMBOL  ||  OPEN  ||  CLOSE  ||  HIGH  ||  LOW  ||  ADJCLOSE  ||  VOLUME  ||  " << endl;
+    cout << this->getDate() << "    " << this->getSym() << "    " << this->getOpen() << "    " << this->getClose() << "    "
+    << this->getHigh() << "    " << this->getLow() << "    " << this->getAdjacentClose() << "    " << this->getVolume() << endl; 
+cout << "=====================================================================================" << endl;
+}
+>>>>>>> fabd266f841e3e1bd05b770a69b4117babf20dd3
 
 
 
