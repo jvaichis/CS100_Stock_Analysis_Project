@@ -9,8 +9,8 @@ class Stock{
 		vector<string> high;
 		vector<string> low;
 		vector<string> close;
-		vector<string> adjClose;
 		vector<string> volume;
+		vector<string> symbol;
 	public:
 		Stock(vector<vector<string>>);
 		double getStockPrice();
@@ -19,9 +19,9 @@ class Stock{
 		int getHigh(int);
 		int getLow(int);
 		int getClose(int);
-		int getAdjacentClose(int);
 		int getVolume(int);
 		void printStockInformation();
 		double getPercentageChange(int, int);
 		double getPercentageChange(int);
+		string getSymbol(int);
 };

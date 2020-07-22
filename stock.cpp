@@ -10,8 +10,8 @@ Stock::Stock(vector<vector<string>> data){
 	high = data.at(2);
 	low = data.at(3);
 	close = data.at(4);
-	adjClose = data.at(5);
-	volume = data.at(6);
+	volume = data.at(5);
+	symbol = data.at(6);
 }
 
 double Stock::getStockPrice(){
@@ -57,17 +57,14 @@ double Stock::getClose(int day){
 	return info;
 }
 
-double Stock::getAdjClose(int day){
-	double info = stod(adjClose.at(day));
-	return info;
-}
-
 double Stock::getVolume(int day){
 	double info = stod(volume.at(day));
 	return info;
 }
 
-
+string Stock::getSymbol(int day){
+	return symbol.at(day);
+} 
 
 
 
