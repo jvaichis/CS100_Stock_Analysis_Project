@@ -14,6 +14,8 @@ class Stock{
 	public:
 		Stock(vector<vector<string>>);
 		double getStockPrice();
+		bool isValidDate(string);
+		bool isValidSymbol(string)
 		string getDate(int);
 		int getOpen(int);
 		int getHigh(int);

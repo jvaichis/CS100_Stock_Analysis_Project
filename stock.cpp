@@ -14,6 +14,24 @@ Stock::Stock(vector<vector<string>> data){
 	symbol = data.at(6);
 }
 
+bool Stock::isValidDate(string dat){
+	for(unsigned i = 0; i < date.size(); i++){
+		if(dat == date.at(i)){
+			return true;
+		}
+	}
+	return false;
+}
+
+bool Stock::isValidSymbol(string sym){
+	for(unsigned i = 0; i < date.size(); i++){
+		if(sym == symbol.at(i)){
+			return true;
+		}
+	}
+	return false;
+}
+
 double Stock::getStockPrice(){
 	double d1 = stod(close.at(close.size()-1));
 	return d1;
