@@ -14,6 +14,7 @@ private:
 vector <Stock*> vec;
 int counter = 0;
 public:
+    Portfolio();
 bool isEmpty(){
 if(counter == 0){
     return true;
