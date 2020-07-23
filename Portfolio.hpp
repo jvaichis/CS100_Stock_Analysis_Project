@@ -83,7 +83,7 @@ cout << endl;
 }
 
 }
-void RemoveStock(int index){
+void RemoveStock(){
     bool loop = true; 
     int input;
     this->display();
