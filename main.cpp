@@ -44,7 +44,7 @@ while (input != 'q'){
 cout << "--------- S&P 500 Stock Data ----------" << endl
      << "        02/07/2013 to 02/07/2018       " << endl
      << "Select an option from the menu:" << endl
-     << "1. Select stock from portfolio"
+     << "1. Select stock from portfolio" << endl
      << "2. Add stock to portfolio" << endl
      << "3. Remove stock from portfolio" << endl
      << "4. Show single day gain" << endl
@@ -72,7 +72,6 @@ if (input == '1'){
 }
      else if (input == '2'){        //add stock
          portfolio.AddStock();
-        cout << endl << "stock added!" << endl;
         input = ' ';
 
      }

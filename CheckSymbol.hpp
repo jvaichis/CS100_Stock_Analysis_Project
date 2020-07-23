@@ -14,20 +14,22 @@ class CheckSymbol {
     public:
 	CheckSymbol() {}
 string CheckSym(){
-string input = "";
-bool check;
+//cout << "******CHECKSYMBOL*********";
+string input;
+bool check= true;
 while(check){
 cout << "Enter name of ticker (e.g 'AAPL'): ";
 cin >> input;
 for (unsigned i = 0; i < SymList.size(); ++i){
     if (input == SymList.at(i)){
         cout << endl << input << " found!" << endl;
-        return input;
+        return input + "_data.csv";
     }
 }
 cout << endl << input << " not found!" << endl;
 }
-return input;
+//cout << "***RETURN***";
+return input +"_data.csv";
 }
 };
 
