@@ -24,7 +24,8 @@
 		    # charts. I have a decent python data science textbook that
 		    # we can use to implement charts. If you guys know a better
 		    # way or know how to do this, feel free to take charge.
-
+	   GOALS --
+	   -create a program to view stocks and stock data
    ==========================================================================*/
 // end of proposal
 
@@ -77,5 +78,12 @@ C. Instructions for use
 - The data only provides data from 2018-2013, be sure to input dates using the format provided.
  
 
+PATTERNS USED:
+-strategy pattern
+-composite pattern
 
-
+Input/Output:
+in - stock_data.csv
+	user input
+out - Stock data
+	Stock Portfolio
