@@ -1,6 +1,6 @@
 #ifndef __PORTFOLIO_HPP__
 #define __PORTFOLIO_HPP__
-#include "stock.hpp"
+#include "stock.cpp"
 #include "CheckStrategy.hpp"
 #include <vector>
 #include <string>
