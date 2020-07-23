@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include "Portfolio.hpp"
-#include "Stock.hpp"
+#include "stock.hpp"
 #include "CheckStrategy.hpp"
 using namespace std;
 
