@@ -29,8 +29,8 @@ const vector <string> DateList={"2013-02-11","2013-02-12","2013-02-13","2013-02-
 
 
 string CheckSymbol(){
-string input = "";
-bool check;
+string input;
+bool check = true;
 while(check){
 cout << "Enter name of ticker (e.g 'AAPL'): ";
 cin >> input;
