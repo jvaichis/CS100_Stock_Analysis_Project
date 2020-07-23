@@ -10,13 +10,13 @@
 #include <fstream>
 using namespace std;
 
-class Portfolio : public Stock{
+class Portfolio{
 private:
 vector <Stock*> vec;
 int counter = 0;
 public:
-Portfolio(){}
-~Portfolio();
+//Portfolio();
+//~Portfolio();
 bool isEmpty(){
 if(counter == 0){
     return true;
