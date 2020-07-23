@@ -43,14 +43,14 @@ double Stock::getStockPrice(){
 double Stock::getPercentageChange(int day1, int day2){
 	double d1 = stod(close.at(day1));
 	double d2 = stod(close.at(day2));
-	double percentage = d2/d1;
+	double percentage = (d2-d1)/d1;
 	return percentage;
 }
 
 double Stock::getPercentageChange(int day){
 	double d1 = stod(open.at(day));
         double d2 = stod(close.at(day));
-	double percentage = d2/d1;
+	double percentage = (d2-d1)/d1;
 	return percentage;
 }
 
