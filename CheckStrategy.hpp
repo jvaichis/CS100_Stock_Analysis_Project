@@ -30,6 +30,7 @@ class Check() {
 private:
 
 public:
+Check() {}
 virtual int index() = 0;
 virtual string check() = 0;
 

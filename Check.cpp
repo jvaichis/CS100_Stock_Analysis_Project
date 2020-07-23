@@ -1,4 +1,4 @@
-
+#include "CheckStrategy.hpp"
 #include <vector>
 #include <string>
 #include <iostream>

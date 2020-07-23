@@ -1,6 +1,6 @@
 #ifndef __PORTFOLIO_HPP__
 #define __PORTFOLIO_HPP__
-#include "Stock.hpp"
+#include "stock.hpp"
 #include "CheckStrategy.hpp"
 #include <vector>
 #include <string>
@@ -34,6 +34,8 @@ vector <string> vclose;
 vector <string> vvolume;
 vector <string> vsymbol;
 // string file = DO CHECKSYM FUNCTION +"_data.csv";
+CheckSymbol cs;
+string file = cs.checkSym() + "_data.csv";
     ifstream stockData(file);
     if (file.is_open()){
         string line;
