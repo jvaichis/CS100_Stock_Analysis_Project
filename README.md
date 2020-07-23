@@ -15,17 +15,18 @@
 		* Alpha Vantage API
 		* Robinhood
 	    The program will prompt user for growth of stock (dates/single day)
-	    or other. It will display graphs via Graph Vis (or the like)
+	    or other.
    === IN/OUT =================================================================
 	    IN	-- stock_data.csv
 		   user input (switch on request)
-	    OUT	-- analyzed_data.csv???
+	    OUT	-- analyzed_data.csv
 		    # Can figure out whether or not we want to use pyhton for
 		    # charts. I have a decent python data science textbook that
 		    # we can use to implement charts. If you guys know a better
 		    # way or know how to do this, feel free to take charge.
 	   GOALS --
 	   -create a program to view stocks and stock data
+	   -find stock growth over a period of time
    ==========================================================================*/
 // end of proposal
 
