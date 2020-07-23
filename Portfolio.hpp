@@ -15,7 +15,8 @@ private:
 vector <Stock*> vec;
 int counter = 0;
 public:
-    Portfolio();
+Portfolio(){}
+~Portfolio();
 bool isEmpty(){
 if(counter == 0){
     return true;
@@ -37,7 +38,7 @@ vector <string> vvolume;
 vector <string> vsymbol;
 // string file = DO CHECKSYM FUNCTION +"_data.csv";
 CheckSymbol cs;
-string file = cs.checkSym() + "_data.csv";
+string file = cs.CheckSym() + "_data.csv";
     ifstream stockData(file);
     if (stockData.is_open()){
         string line;
