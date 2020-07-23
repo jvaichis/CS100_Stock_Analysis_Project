@@ -2,7 +2,6 @@
 #include <vector>
 #include <sstream>
 #include <fstream>
-#include "readcsv.h"
 using namespace std;
 class Stock{
 	private:
@@ -14,7 +13,7 @@ class Stock{
 		vector<string> volume;
 		vector<string> symbol;
 	public:
-		Stock(string);
+		Stock(vector<string>,vector<string>,vector<string>,vector<string>,vector<string>,vector<string>,vector<string>);
 		double getStockPrice();
 		bool isValidDate(string);
 		bool isValidSymbol(string);
