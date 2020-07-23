@@ -30,6 +30,8 @@ const vector <string> DateList={"2013-02-11","2013-02-12","2013-02-13","2013-02-
 
 bool CheckSymbol(){
 string input;
+bool check;
+while(check){
 cout << "Enter name of ticker (e.g 'AAPL'): ";
 cin >> input;
 for (unsigned i = 0; i < SymList.size(); ++i){
@@ -39,6 +41,7 @@ for (unsigned i = 0; i < SymList.size(); ++i){
     }
 }
 cout << endl << input << " not found!" << endl;
+}
 return false;
 
 }
@@ -46,7 +49,7 @@ int CheckDate(){
 int i = 0;
 string input;
 bool check = false;
-cout << "Enter a weekdate from '2013-2-11' to '2018-2-18': ";
+cout << "Enter a weekdate from '2013-02-11' to '2018-02-18' in this exact format: ";
 while (!check){
 cin >> input;
 for (i = 0; i < DateList.size(); ++i){
