@@ -28,7 +28,7 @@ class Stock{
 		void printStockInformation(int);
 		double getPercentageChange(int, int);
 		double getPercentageChange(int);
-		string getSymbol(int);
+		string getSymbol();
 		void readStock();
 };
 #endif
