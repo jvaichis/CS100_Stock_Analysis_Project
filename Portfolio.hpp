@@ -37,7 +37,7 @@ vector <string> vsymbol;
 CheckSymbol cs;
 string file = cs.checkSym() + "_data.csv";
     ifstream stockData(file);
-    if (file.is_open()){
+    if (stockData.is_open()){
         string line;
         getline(stockData,line);    //ignore the first line
         
@@ -50,14 +50,15 @@ string file = cs.checkSym() + "_data.csv";
             vhigh.push_back(high);
             getline(stockData, low, ',');
             vlow.push_back(low);
-            getline(stockData,close,',')
+            getline(stockData,close,',');
             vclose.push_back(close);
             getline(stockData,volume, ',');
             vvolume.push_back(volume);
             getline(stockData,symbol,'\n');
             vsymbol.push_back(symbol);
         }
-    else
+    }
+    else{
         cout << "Unable to open file." << endl;
 
     }    
@@ -84,12 +85,12 @@ cout << endl;
 void RemoveStock(int index){
     bool loop = true; 
     int input;
-    vec->display();
+    this->display();
     while (loop) {
     cout << endl << "Select stock to remove: ";
     cin >> input;
     if (input > 0 && input  >= counter ){
-        vec.erase(Portfolio.begin() +input);
+        vec.erase(vec.begin() +input);
         counter--;
         loop = false;
     }
