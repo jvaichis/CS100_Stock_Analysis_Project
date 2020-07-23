@@ -55,6 +55,7 @@ double Stock::getPercentageChange(int day){
 }
 
 string Stock::getDate(int day){
+	cout << "*******" << date.at(day);
 	return date.at(day);
 }
 

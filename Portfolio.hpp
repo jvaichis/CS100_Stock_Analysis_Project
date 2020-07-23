@@ -92,10 +92,13 @@ void RemoveStock(){
     while (loop) {
     cout << endl << "Select stock to remove: ";
     cin >> input;
-    if (input > 0 && input  >= counter ){
+    input -= 1;
+    if(input >= 0 && input <= counter) {
         vec.erase(vec.begin() +input);
         counter--;
         loop = false;
+	this->display();
+	cout << "stock removed!";
     }
     else
         cout << "Invalid input!" << endl;

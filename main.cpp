@@ -77,7 +77,7 @@ if (input == '1'){
      }
      else if (input == '3'){
          portfolio.RemoveStock();
-         cout << endl << "stock removed!" << endl;
+         cout << endl  << endl;
          input = ' ';
      }
      else if (input == '4'){            // single day gain
