@@ -1,5 +1,7 @@
 #include <cmath>
 #include <vector>
+#include <sstream>
+#include <fstream>
 #include "readcsv.h"
 using namespace std;
 class Stock{
