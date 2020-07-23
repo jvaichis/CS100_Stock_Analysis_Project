@@ -71,7 +71,7 @@ more polished final product including API's, visuals, and real-time data.
   
 B. SCREENSHOTS
 
-
+https://drive.google.com/file/d/1ybJFiCp-Icue452j_svdJE8yRE6KQv_K/view?usp=sharing
 
 C. Instructions for use
 - Make sure to add a stock to your portfolio and select the stock before running other functions
