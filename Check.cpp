@@ -28,8 +28,8 @@ const vector <string> DateList={"2013-02-11","2013-02-12","2013-02-13","2013-02-
 
 
 
-bool CheckSymbol(){
-string input;
+string CheckSymbol(){
+string input = "";
 bool check;
 while(check){
 cout << "Enter name of ticker (e.g 'AAPL'): ";
@@ -37,12 +37,12 @@ cin >> input;
 for (unsigned i = 0; i < SymList.size(); ++i){
     if (input == SymList.at(i)){
         cout << endl << input << " found!" << endl;
-        return true;
+        return input;
     }
 }
 cout << endl << input << " not found!" << endl;
 }
-return false;
+return input;
 
 }
 int CheckDate(){
