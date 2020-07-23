@@ -85,8 +85,8 @@ if (input == '1'){
         CheckDate d1;
 	int day = d1.index();
         cout << "Single day gain = ";
-       currentStock->getPercentageChange(day);
-        cout << " percent" <<endl;
+      double ans = 100 *  currentStock->getPercentageChange(day);
+        cout << ans << " percent" <<endl;
          input = ' ';
      }
      else if (input == '5'){        //gains over a period
@@ -105,6 +105,8 @@ if (input == '1'){
 	int day  = d1.index();
          cout << "Single day volume: " << endl;
         currentStock->getDate(day);
+	double ans = currentStock->getVolume(day);
+cout << ans << endl;
          input = ' ';
      }
      else if (input == '7'){
