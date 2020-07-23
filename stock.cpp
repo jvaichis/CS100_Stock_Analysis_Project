@@ -90,9 +90,9 @@ string Stock::getSymbol(){
 
 
 void Stock::printStockInformation(int day) {
- cout << "=== " << this->getSymbol(day) << " ===" << endl;
+ cout << "=== " << this->getSymbol() << " ===" << endl;
     cout << "DATE  ||  SYMBOL  ||  OPEN  ||  CLOSE  ||  HIGH  ||  LOW  || VOLUME  ||  " << endl;
-    cout << this->getDate(day) << "    " << this->getSymbol(day) << "    " << this->getOpen(day) << "    " << this->getClose(day) << "    "
+    cout << this->getDate(day) << "    " << this->getSymbol() << "    " << this->getOpen(day) << "    " << this->getClose(day) << "    "
     << this->getHigh(day) << "    " << this->getLow(day) << "    " << this->getVolume(day) << endl; 
 cout << "=====================================================================================" << endl;
 }

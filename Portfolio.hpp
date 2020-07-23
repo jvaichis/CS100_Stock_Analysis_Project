@@ -2,6 +2,7 @@
 #define __PORTFOLIO_HPP__
 #include "stock.cpp"
 #include "CheckStrategy.hpp"
+#include "CheckSymbol.hpp"
 #include <vector>
 #include <string>
 #include <iostream>

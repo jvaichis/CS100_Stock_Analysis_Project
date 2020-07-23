@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "CheckDate.hpp"
 #include "Portfolio.hpp"
 #include "stock.hpp"
 #include "CheckStrategy.hpp"
@@ -82,7 +83,7 @@ if (input == '1'){
      }
      else if (input == '4'){            // single day gain
         // int day = CHECKDATE()
-        Checkdate d1;
+        CheckDate d1;
 	int day = d1.index();
         cout << "Single day gain = ";
         currentStock->getPercentageChange(day);
@@ -91,7 +92,7 @@ if (input == '1'){
      }
      else if (input == '5'){        //gains over a period
         //int day1 = CHECKDATE();  int day2 = CHECKDATE();
-        Checkdate d1;
+        CheckDate d1;
 	int day1 = d1.index();
 	int day2 = d1.index();
         cout << "Gains over period = ";
@@ -101,7 +102,7 @@ if (input == '1'){
      }
      else if (input == '6'){    // volume
         // int day = CHECKDATE()
-         Checkdate d1;
+         CheckDate d1;
 	int day  = d1.index();
          cout << "Single day volume: " << endl;
          currentStock->getDate(day);
@@ -109,7 +110,7 @@ if (input == '1'){
      }
      else if (input == '7'){
          // int day = CHECKDATE()
-         Checkdate d1;
+         CheckDate d1;
 	 int day = d1.index();
          cout << "Current Stock data" << endl << endl;
          currentStock->printStockInformation(day);
