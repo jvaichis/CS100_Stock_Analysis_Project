@@ -1,3 +1,5 @@
+#ifndef __STOCK_CPP__
+#define __STOCK_CPP__
 #include "stock.hpp"
 #include <cmath>
 #include <vector>
@@ -95,6 +97,8 @@ void Stock::printStockInformation(int day) {
 cout << "=====================================================================================" << endl;
 }
 
+
+#endif
 
 
 
