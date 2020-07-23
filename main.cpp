@@ -65,7 +65,7 @@ if (input == '1'){
                portfolio.display();
                cout << "Select Stock: ";
                 cin >> select;
-                currentStock == portfolio.getStock(select-1);
+                currentStock = portfolio.getStock(select-1);
                 input = ' ';
         } 
 
@@ -85,7 +85,7 @@ if (input == '1'){
         CheckDate d1;
 	int day = d1.index();
         cout << "Single day gain = ";
-        currentStock->getPercentageChange(day);
+       currentStock->getPercentageChange(day);
         cout << " percent" <<endl;
          input = ' ';
      }
@@ -95,8 +95,8 @@ if (input == '1'){
 	int day1 = d1.index();
 	int day2 = d1.index();
         cout << "Gains over period = ";
-        currentStock->getPercentageChange(day1,day2);
-        cout << " percent" << endl;
+   double ans =100 * currentStock->getPercentageChange(day1,day2);
+        cout << ans << " percent" << endl;
         input = ' ';
      }
      else if (input == '6'){    // volume
@@ -104,7 +104,7 @@ if (input == '1'){
          CheckDate d1;
 	int day  = d1.index();
          cout << "Single day volume: " << endl;
-         currentStock->getDate(day);
+        currentStock->getDate(day);
          input = ' ';
      }
      else if (input == '7'){
@@ -112,7 +112,7 @@ if (input == '1'){
          CheckDate d1;
 	 int day = d1.index();
          cout << "Current Stock data" << endl << endl;
-         currentStock->printStockInformation(day);
+       currentStock->printStockInformation(day);
          input = ' ';
      }
       else if (input == '8'){

@@ -38,7 +38,7 @@ vector <string> vvolume;
 vector <string> vsymbol;
 // string file = DO CHECKSYM FUNCTION +"_data.csv";
 CheckSymbol cs;
-string file = cs.CheckSym() + "_data.csv";
+string file = cs.CheckSym();
     ifstream stockData(file);
     if (stockData.is_open()){
         string line;
@@ -80,7 +80,7 @@ Stock* getStock(int i){
 void display(){
 for (unsigned i = 0; i < counter; ++i){
 cout << "=== STOCK #" << i+1 << " ===" << endl;
-vec.at(i)->printStockInformation(1258);
+vec.at(i)->printStockInformation(1259);
 cout << endl;
 }
 
