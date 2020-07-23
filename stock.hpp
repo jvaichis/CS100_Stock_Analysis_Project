@@ -26,4 +26,5 @@ class Stock{
 		double getPercentageChange(int, int);
 		double getPercentageChange(int);
 		string getSymbol(int);
+		void readStock();
 };
