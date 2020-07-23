@@ -4,17 +4,15 @@
 #include <string>
 #include "readcsv.h"
 using namespace std;
-
-Stock::Stock(string fileName){
-	CSVReader csv = CSVReader(fileName);
-	vector<vector<string>> data = csv.getData();
-	date = data.at(0);
-	open = data.at(1);
-	high = data.at(2);
-	low = data.at(3);
-	close = data.at(4);
-	volume = data.at(5);
-	symbol = data.at(6);
+Stock::Stock(vector<string> vdate,vector<string> vopen,vector<string> vhigh, 
+	     vector<string> vlow, vector<string> vclose, vector<string> vvolume,vector<string> vsymbol){
+	date = vdate;
+	open = vopen;
+	high = vhigh;
+	low = vlow;
+	close = vclose;
+	volume = vvolume;
+	symbol = vsymbol;
 }
 
 bool Stock::isValidDate(string dat){
@@ -84,8 +82,8 @@ double Stock::getVolume(int day){
 }
 
 
-string Stock::getSymbol(int day){
-	return symbol.at(day);
+string Stock::getSymbol(){
+	return symbol.at(1);
 } 
 
 
