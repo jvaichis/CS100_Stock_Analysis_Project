@@ -30,7 +30,7 @@ TEST(GetPercentageChange, multiday){
 	EXPECT_LE(percent, 0.9921802271);
 }
 
-Test(GetDate, GetDate){
+TEST(GetDate, GetDate){
 	Stock st = Stock("IBM_data.csv");
 	Stock st1 = Stock("IT_data.csv");
 	string msg = st.getDate(35);
