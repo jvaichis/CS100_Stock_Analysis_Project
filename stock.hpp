@@ -1,3 +1,5 @@
+#ifndef __STOCK_HPP__
+#define __STOCK_HPP__
 #include <cmath>
 #include <vector>
 #include <sstream>
@@ -29,3 +31,4 @@ class Stock{
 		string getSymbol(int);
 		void readStock();
 };
+#endif
