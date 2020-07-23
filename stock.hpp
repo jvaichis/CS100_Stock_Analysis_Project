@@ -1,6 +1,6 @@
 #include <cmath>
 #include <vector>
-
+#include "readcsv.h"
 using namespace std;
 class Stock{
 	private:
@@ -12,17 +12,17 @@ class Stock{
 		vector<string> volume;
 		vector<string> symbol;
 	public:
-		Stock(vector<vector<string>>);
+		Stock(string);
 		double getStockPrice();
 		bool isValidDate(string);
-		bool isValidSymbol(string)
+		bool isValidSymbol(string);
 		string getDate(int);
-		int getOpen(int);
-		int getHigh(int);
-		int getLow(int);
-		int getClose(int);
-		int getVolume(int);
-		void printStockInformation();
+		double getOpen(int);
+		double getHigh(int);
+		double getLow(int);
+		double getClose(int);
+		double getVolume(int);
+		void printStockInformation(int);
 		double getPercentageChange(int, int);
 		double getPercentageChange(int);
 		string getSymbol(int);

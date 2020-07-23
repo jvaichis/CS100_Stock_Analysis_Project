@@ -2,9 +2,12 @@
 #include <cmath>
 #include <vector>
 #include <string>
+#include "readcsv.h"
 using namespace std;
 
-Stock::Stock(vector<vector<string>> data){
+Stock::Stock(string fileName){
+	CSVReader csv = CSVReader(fileName);
+	vector<vector<string>> data = csv.getData();
 	date = data.at(0);
 	open = data.at(1);
 	high = data.at(2);
@@ -45,8 +48,8 @@ double Stock::getPercentageChange(int day1, int day2){
 }
 
 double Stock::getPercentageChange(int day){
-	double d1 = stod(close.at(day1));
-        double d2 = stod(close.at(day2));
+	double d1 = stod(open.at(day));
+        double d2 = stod(close.at(day));
 	double percentage = d2/d1;
 	return percentage;
 }
@@ -80,19 +83,19 @@ double Stock::getVolume(int day){
 	return info;
 }
 
-<<<<<<< HEAD
+
 string Stock::getSymbol(int day){
 	return symbol.at(day);
 } 
-=======
-void Stock::printStockInformation() {
- cout << "=== " << this->getSym() << " ===" << endl;
-    cout << "DATE  ||  SYMBOL  ||  OPEN  ||  CLOSE  ||  HIGH  ||  LOW  ||  ADJCLOSE  ||  VOLUME  ||  " << endl;
-    cout << this->getDate() << "    " << this->getSym() << "    " << this->getOpen() << "    " << this->getClose() << "    "
-    << this->getHigh() << "    " << this->getLow() << "    " << this->getAdjacentClose() << "    " << this->getVolume() << endl; 
+
+
+void Stock::printStockInformation(int day) {
+ cout << "=== " << this->getSymbol(day) << " ===" << endl;
+    cout << "DATE  ||  SYMBOL  ||  OPEN  ||  CLOSE  ||  HIGH  ||  LOW  || VOLUME  ||  " << endl;
+    cout << this->getDate(day) << "    " << this->getSymbol(day) << "    " << this->getOpen(day) << "    " << this->getClose(day) << "    "
+    << this->getHigh(day) << "    " << this->getLow(day) << "    " << this->getVolume(day) << endl; 
 cout << "=====================================================================================" << endl;
 }
->>>>>>> fabd266f841e3e1bd05b770a69b4117babf20dd3
 
 
 
