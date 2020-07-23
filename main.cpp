@@ -38,7 +38,7 @@ while (input != 'q'){
         cout << "===== NO STOCK SELECTED =====" << endl;
     }
     else{
-        cout << "=== Current Stock: " << currentStock->getSym() << " ===" << endl;
+        cout << "=== Current Stock: " << currentStock->getSymbol() << " ===" << endl;
     }
 cout << "--------- S&P 500 Stock Data ----------" << endl
      << "        02/07/2013 to 02/07/2018       " << endl
